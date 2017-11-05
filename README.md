@@ -1,6 +1,6 @@
 # VLC-Radio Python script
 
-- 11/4/17 edit, the channel I uploaded the video example on was deactivated. I'm setting up a dedicated PC to stream 24/7, and will post a new example once the stream is online again .ETA 1 week max.  
+- 11/4/17 edit, the channel I uploaded the video example on was deactivated. I'm setting up a dedicated PC to stream 24/7, and will post a new example once the stream is online again. ETA 1 week max.  
 
 This is a python script I built for streaming music using VLC media player. This script will read metadata from VLC media player for the song's title, album, artist, year released, genre, and album artwork. The album art will be automatically resized, and copied to the location of a folder specified in the script whenever a new song is played.
 
