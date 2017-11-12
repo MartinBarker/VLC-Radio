@@ -6,7 +6,7 @@ This is a python script I built for streaming music using VLC media player. This
 
 To change where the album artwork is saved, change the 'dst' variable on line 6 of the file. To change where the text file of song info is save, change the 'save_path' variable on line 8 of the program.
 
-You can see a working example here: https://www.youtube.com/watch?v=zVGp3FmGGlw&t=21928s I used OBS studio for broadcasting, and set it up to display the jpg titled art.jpg in a folder, as well as display the contents of a specific text file. The album art and text file are automatically updated when their contents are changed.
+You can see a working example here: https://www.youtube.com/watch?v=eTXGcsqmj3g I used OBS studio for broadcasting, and set it up to display the jpg titled art.jpg in a folder, as well as display the contents of a specific text file. The album art and text file are automatically updated when their contents are changed.
 
 # VLC Setup
 To setup VLC Media Player, you will need to enable an online connection. You can find instructions on how to do so in this post:
