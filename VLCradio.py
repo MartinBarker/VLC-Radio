@@ -94,7 +94,8 @@ def song_info():
     completeName = os.path.join(save_path, "song_info"+".txt")
     file1 = open(completeName, "w")
 
-    toFile = title + " - " + artist
+    toFile = title + " - " + artist + "\n" + album + " ("+date+")\n" + genre
+
 
     file1.write(toFile)
     file1.close()
