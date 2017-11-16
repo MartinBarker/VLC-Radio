@@ -11,3 +11,5 @@ You can see a working example here: https://www.youtube.com/watch?v=eTXGcsqmj3g 
 # VLC Setup
 To setup VLC Media Player, you will need to enable an online connection. You can find instructions on how to do so in this post:
 https://stackoverflow.com/questions/24178980/how-to-monitor-vlc-media-player-on-windows-7-using-python
+
+If you follow this guide, you will set a password for your vlc web interface, in the python file make sure you enter that same password in the s.auth = ('', 'password') field
