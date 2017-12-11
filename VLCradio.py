@@ -4,7 +4,12 @@
 #dst = where to save album artwork for the currently playing song
 dst = "C:/Users/marti/Desktop/MRL/cover/art.jpg"
 #save_path = where to save text file of album art / title / artist text
-save_path = "C:\Users\marti\Desktop\Martin Radio Livestream"
+#save_path = "C:\Users\marti\Desktop\Martin Radio Livestream"
+save_path = "C:/Users/marti/Desktop/Martin Radio Livestream"
+
+
+#need to import requests
+
 
 print("--------------")
 print(" Martin Radio ")
