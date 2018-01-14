@@ -1,10 +1,10 @@
 # VLC-Radio Python script
 
 install with 
-'''pip install vlcTagCollector '''
+```pip install vlcTagCollector ```
 
 and run with 
-''' python -m VLC-Radio '''
+``` python -m VLC-Radio ```
 
 Change the image and text file save directories. 
 
