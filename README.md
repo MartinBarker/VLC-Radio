@@ -9,8 +9,12 @@ and run with
 
 # Requirements
 The following python packages need to be installed, you can install them using these commands:
-``` pip install Image    ```
-``` pip install requests ```
+``` 
+pip install Image   
+```
+``` 
+pip install requests 
+```
 
 # How to use
 First, change the image and text file save directories. 
