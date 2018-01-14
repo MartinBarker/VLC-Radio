@@ -2,13 +2,13 @@
 #Martin Barker 2017
 #martinbarker.me
 
-#dst = where to save album artwork for the currently playing song
-dst = "C:/Users/marti/Desktop/MRL/cover/art.jpg"
+#artSaveLocation = where to save album artwork for the currently playing song
+artSaveLocation = "C:/Users/marti/Desktop/MRL/cover/art.jpg"
 #art.jpg is where the album artwork will be saved to.
 
 
-#save_path = where to save text file of album art / title / artist text
-save_path = "C:/Users/marti/Desktop/Martin Radio Livestream"
+#songInfoSaveLocation = where to save text file of album art / title / artist text
+songInfoSaveLocation = "C:/Users/marti/Desktop/Martin Radio Livestream"
 #'Martin Radio Livestream' is the folder where a text file of song info will be saved to.
 
 #^^^^^^ you should change both of these strings to where you want to files to be saved.
@@ -32,17 +32,17 @@ import requests
 import time
 from PIL import Image
 
-def save_img(src): #resizes image and saves it to dst folder
+def save_img(src): #resizes image and saves it to artSaveLocation folder
 #    print("in func")
 
-    #resize album art, save to dst
+    #resize album art, save to artSaveLocation
     basewidth = 1000
     img = Image.open(src)
     wpercent = (basewidth/float(img.size[0]))
     hsize = int((float(img.size[1])*float(wpercent)))
     img = img.resize((basewidth,hsize), Image.ANTIALIAS)
-    img.save(dst)
-    print("~~dst image saved to src~~")
+    img.save(artSaveLocation)
+    print("~~artSaveLocation image saved to src~~")
     return
 
 def find(searchterm): #this will find any of the terms passed into function
@@ -104,8 +104,8 @@ def song_info():
     genre = find(searchterm)
     print("Genre: "+genre)
 
-#    save_path = "C:\Users\marti\Desktop\Martin Radio Livestream"
-    completeName = os.path.join(save_path, "song_info"+".txt")
+#    songInfoSaveLocation = "C:\Users\marti\Desktop\Martin Radio Livestream"
+    completeName = os.path.join(songInfoSaveLocation, "song_info"+".txt")
     file1 = open(completeName, "w")
 
     toFile = title + " - " + artist + "\n" + album + " ("+date+")\n" + genre
