@@ -1,4 +1,5 @@
 # VLC-Radio Python script
+## A tool for streamers to cleanly display song info from VLC Media Player.
 Built for Python 3.6
 
 install with 
