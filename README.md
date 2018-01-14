@@ -8,6 +8,13 @@ and run with
 ``` python -m VLCtagExporter ```
 
 Change the image and text file save directories. 
+![locations](https://user-images.githubusercontent.com/27025504/34912780-43265264-f89e-11e7-9595-0ec692dd8e68.png)
+
+# Requirements
+The following python packages need to be installed, you can install them using these commands:
+``` pip install Image
+    pip install requests ```
+
 
 This is a python script I built for streaming music using VLC media player. This script will read metadata from VLC media player for the song's title, album, artist, year released, genre, and album artwork. The album art will be automatically resized, and copied to the location of a folder specified in the script whenever a new song is played.
 
