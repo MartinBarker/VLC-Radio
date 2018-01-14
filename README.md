@@ -19,11 +19,9 @@ pip install requests
 
 # How to use
 First, change the image and text file save directories. 
-![locations](https://user-images.githubusercontent.com/27025504/34912780-43265264-f89e-11e7-9595-0ec692dd8e68.png)
+![images](https://user-images.githubusercontent.com/27025504/34912841-409f2c9e-f8a0-11e7-8164-ceebe02c58e1.png)
 
-This is a python script I built for streaming music using VLC media player. This script will read metadata from VLC media player for the song's title, album, artist, year released, genre, and album artwork. The album art will be automatically resized, and copied to the location of a folder specified in the script whenever a new song is played.
-
-To change where the album artwork is saved, change the 'dst' variable on line 6 of the file. To change where the text file of song info is save, change the 'save_path' variable on line 8 of the program.
+Then, while VLC Media player is playing audio, run the program. The song info will be exported into a text file at the location for 'songInfoSaveLocation' specified in the image above. The album art will be resized and exported to the location specified in the 'artSaveLocation' value shown above.
 
 You can see a working example here: https://www.youtube.com/watch?v=eTXGcsqmj3g I used OBS studio for broadcasting, and set it up to display the jpg titled art.jpg in a folder, as well as display the contents of a specific text file. The album art and text file are automatically updated when their contents are changed.
 
