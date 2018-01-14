@@ -18,7 +18,7 @@ pip install requests
 ```
 
 # How to use
-First, change the image and text file save directories. 
+Firstly, change the image and text file save directories. 
 ![images](https://user-images.githubusercontent.com/27025504/34912841-409f2c9e-f8a0-11e7-8164-ceebe02c58e1.png)
 
 Then, while VLC Media player is playing audio, run the program. The song info will be exported into a text file at the location for 'songInfoSaveLocation' specified in the image above. The album art will be resized and exported to the location specified in the 'artSaveLocation' value shown above.
