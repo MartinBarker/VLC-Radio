@@ -1,10 +1,11 @@
 # VLC-Radio Python script
+Built for Python 3.6
 
 install with 
-```pip install vlcTagCollector ```
+```pip install VLCtagExporter ```
 
 and run with 
-``` python -m VLC-Radio ```
+``` python -m VLCtagExporter ```
 
 Change the image and text file save directories. 
 
