@@ -28,7 +28,7 @@ You can see a working example by clicking on this image, or the link below.
 https://user-images.githubusercontent.com/27025504/34912889-a3a5e304-f8a1-11e7-98e5-ddc1c06f4a61.png
 https://www.youtube.com/watch?v=DW2mUMJ_63A
 
-[![images](https://user-images.githubusercontent.com/27025504/34912841-409f2c9e-f8a0-11e7-8164-ceebe02c58e1.png)(https://www.youtube.com/watch?v=DW2mUMJ_63A](https://www.youtube.com/watch?v=DW2mUMJ_63A)
+[![images](https://user-images.githubusercontent.com/27025504/34912889-a3a5e304-f8a1-11e7-98e5-ddc1c06f4a61.png)(https://www.youtube.com/watch?v=DW2mUMJ_63A](https://www.youtube.com/watch?v=DW2mUMJ_63A)
 
 I used OBS studio for broadcasting, and set it up to display the jpg titled art.jpg in a folder, as well as display the contents of a specific text file. The album art and text file are automatically updated when their contents are changed.
 
