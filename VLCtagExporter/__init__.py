@@ -3,12 +3,12 @@
 #martinbarker.me
 
 #artSaveLocation = where to save album artwork for the currently playing song
-artSaveLocation = "C:/Users/marti/Desktop/MRL/cover/art.jpg"
+artSaveLocation = "C:/Users/martin/Documents/MartinRadioLive/Script/"
 #art.jpg is where the album artwork will be saved to.
 
 
 #songInfoSaveLocation = where to save text file of album art / title / artist text
-songInfoSaveLocation = "C:/Users/marti/Desktop/Martin Radio Livestream"
+songInfoSaveLocation = "C:/Users/martin/Documents/MartinRadioLive/"
 #'Martin Radio Livestream' is the folder where a text file of song info will be saved to.
 
 #^^^^^^ you should change both of these strings to where you want to files to be saved.
