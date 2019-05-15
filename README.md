@@ -12,7 +12,7 @@ run the program:
 ``` python -m vlcradio "imgPath" "metadataPath" "url" ```
 
 example command:
-``` python VLCradio.py "E:/Martin Radio/Martin Radio Live/streamAlbumArt/art.jpg" "E:/Martin Radio/Martin Radio Live/metadata/song_info.txt" "http://localhost:8080/status.xml"  ```
+``` python -m vlcradio "E:/Martin Radio/Martin Radio Live/streamAlbumArt/art.jpg" "E:/Martin Radio/Martin Radio Live/metadata/song_info.txt" "http://localhost:8080/status.xml"  ```
 
 
 # How to use
