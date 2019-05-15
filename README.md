@@ -6,12 +6,12 @@ Built for Python 3.6
 install with 
 ```pip install vlcradio```
 
-when running, specify the path where you want to save the image, path where you want to save the text file containg song metadata, and url of VLC's web status [instructions to enable this are below]
+when running, specify the path where you want to save the image, path where you want to save the text file containing song metadata, and url of VLC's web status [instructions to enable this are below]
 
 run with
 ``` python -m vlcradio "imgPath" "metadataPath" "url" ```
-``` python VLCradio.py "E:/Martin Radio/Martin Radio Live/streamAlbumArt/art.jpg" "E:/Martin Radio/Martin Radio Live/metadata/song_info.txt" "http://localhost:8080/status.xml"
- ```
+``` python VLCradio.py "E:/Martin Radio/Martin Radio Live/streamAlbumArt/art.jpg" "E:/Martin Radio/Martin Radio Live/metadata/song_info.txt" "http://localhost:8080/status.xml"  ```
+
 
 # How to use
 While VLC Media player is playing audio, run the vlcradio package. The song info will be exported into a text file at the location specified in the "metadataPath" command line argument. The album art will be resized and exported to the location specified in the  "imgPath" command line argument.
