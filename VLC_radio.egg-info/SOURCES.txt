@@ -1,0 +1,7 @@
+README.md
+setup.py
+VLC-radio/__init__.py
+VLC_radio.egg-info/PKG-INFO
+VLC_radio.egg-info/SOURCES.txt
+VLC_radio.egg-info/dependency_links.txt
+VLC_radio.egg-info/top_level.txt

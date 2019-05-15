@@ -1,36 +1,36 @@
-
-#Martin Barker
-#www.martinradio.com
-#dst = where to save album artwork for the currently playing song
-dst = "C:/Users/martin/Documents/MartinRadioLive/Script/art.jpg"
-#save_path = where to save text file of album art / title / artist text
-save_path = "C:/Users/martin/Documents/MartinRadioLive"
-
-#pip install opencv-python
-
+import sys
+import os
 #libraries to help encode / decode utf-8 chars to their corresponding ascii
 #from unidecode import  unidecode
 from urllib.parse import unquote
 import html
 import html.parser
-
-#import sys
-#import os
-#decode a gzipped response:
-#import gzip
-#import io
-
-print("--------------")
-print(" Martin Radio ")
-#print(" Input options: 's'(start), 'e'(end) ")
-print("--------------")
 from shutil import copyfile
 from sys import exit
-import os
 import os.path
 import requests
 import time
 from PIL import Image
+
+###############################################
+print("\n\nprogram start")
+
+#python VLCradio.py "imgPath" "metadataPath" "url"
+#python VLCradio.py "E:/Martin Radio/Martin Radio Live/streamAlbumArt/art.jpg" "E:/Martin Radio/Martin Radio Live/metadata/song_info.txt" "http://localhost:8080/status.xml"
+
+imgPath = sys.argv[1]
+print("imgPath = ", imgPath)
+
+metadataPath = sys.argv[2]
+print("metadataPath = ", metadataPath)
+
+url = sys.argv[3]
+print("url = ", url)
+
+print("--------------")
+print(" Martin Radio ")
+print("--------------")
+
 
 def cleanup(url):
     try:
@@ -49,7 +49,7 @@ def save_img(src): #resizes image and saves it to dst folder
     hsize = int((float(img.size[1])*float(wpercent)))
     img = img.resize((basewidth,hsize), Image.ANTIALIAS)
     print("saving img")
-    img.save(dst)
+    img.save(imgPath)
     print("~~dst image saved to src~~")
     return
 
@@ -57,7 +57,7 @@ def find(searchterm): #this will find any of the terms passed into function
 #    print("In find function, looking for "+searchterm)
     s = requests.Session()
     s.auth = ('', '1234') # Username is blank, just provide the password
-    r = s.get('http://localhost:8080/requests/status.xml', verify=False)
+    r = s.get(url, verify=False)
 
 #    print("-------")
 #    print(r)
@@ -77,7 +77,7 @@ def parse():
     print("in parse function")
     s = requests.Session()
     s.auth = ('', '1234') # Username is blank, just provide the password
-    r = s.get('http://localhost:8080/requests/status.xml', verify=False)
+    r = s.get(url, verify=False)
     str2 = "artwork_url"
     loc = r.text.find(str2) #loc = index location of where artwork_url begins
     rough_loc = r.text[(loc+21):(loc+300)] #rough_loc = location string, no ending
@@ -166,9 +166,7 @@ def song_info():
     genre = htmlcleapup(genre)
     print("Genre: "+genre)
 
-    save_path = "C:/Users/martin/Documents/MartinRadioLive"
-    completeName = os.path.join(save_path, "song_info"+".txt")
-    file1 = open(completeName, "w")
+    file1 = open(metadataPath, "w")
 
     toFile = title + "\n" + artist + "\n\n" + album + "\n"+date+"\n" + genre
 
@@ -180,7 +178,6 @@ def song_info():
 print("start")
 starttime=time.time()
 
-#print("beginning")
 song_info()
 print("done parseing song info")
 
