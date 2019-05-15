@@ -8,8 +8,10 @@ install with
 
 when running, specify the path where you want to save the image, path where you want to save the text file containing song metadata, and url of VLC's web status [instructions to enable this are below]
 
-run with
+run the program:
 ``` python -m vlcradio "imgPath" "metadataPath" "url" ```
+
+example command:
 ``` python VLCradio.py "E:/Martin Radio/Martin Radio Live/streamAlbumArt/art.jpg" "E:/Martin Radio/Martin Radio Live/metadata/song_info.txt" "http://localhost:8080/status.xml"  ```
 
 
