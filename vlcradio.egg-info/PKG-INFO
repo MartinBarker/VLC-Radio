@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: vlc-radio
-Version: 0.0.3
+Name: vlcradio
+Version: 0.0.1
 Summary: export VLC metadata
 Home-page: https://github.com/MartinBarker/VLC-Radio
 Author: martinbarker99
